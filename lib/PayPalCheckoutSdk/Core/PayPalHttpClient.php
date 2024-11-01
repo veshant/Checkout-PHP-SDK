@@ -8,6 +8,7 @@ class PayPalHttpClient extends HttpClient
 {
     private $refreshToken;
     public $authInjector;
+    protected $curlCls;
 
     public function __construct(PayPalEnvironment $environment, $refreshToken = NULL)
     {
